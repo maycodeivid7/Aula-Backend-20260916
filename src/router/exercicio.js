@@ -1,9 +1,9 @@
 import express from "express";
+import ControllerExercicio from "../controler/exercicio.js";
 
 const router = express.Router();
 
-router.get("/exercicio", (req, res) => {
-    res.send("Hello from exercicio route!");
-});
+router.get("/exercicio", ControllerExercicio.Exercicio);
 
 export default router;
+

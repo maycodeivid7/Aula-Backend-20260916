@@ -1,6 +1,8 @@
 class ControllerExercicio {
 
-    Exercicio(req, res) {}
+    Exercicio(req, res) {
+        res.send("Hello from exercicio route!");
+    }
 
  }
 
