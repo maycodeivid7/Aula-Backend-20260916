@@ -1,7 +1,10 @@
+import ServiceExercicio from "../service/exercicio.js";
+
 class ControllerExercicio {
 
     Exercicio(req, res) {
-        res.send("Hello from exercicio route!");
+        const mensagem = req.query.mensagem || "default";
+        res.send(ServiceExercicio.Exercicio(mensagem));
     }
 
  }
